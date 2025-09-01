@@ -1,0 +1,40 @@
+name: Sync + Rewrite Firefly
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # every night at 03:00 UTC
+  workflow_dispatch:        # allow manual runs
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # we need full history
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/firefly-iii/data-importer.git
+          git fetch upstream
+
+      - name: Rebase fork on top of upstream
+        run: |
+          git checkout main
+          git rebase upstream/main || true
+
+      - name: Rewrite changelog.md
+        run: |
+          # Replace "## X.Y.Z" → "## version-X.Y.Z"
+          sed -i -E 's/^## ([0-9]+\.[0-9]+\.[0-9]+)/## version-\1/g' changelog.md
+          git config user.name "Firefly Mirror Bot"
+          git config user.email "firefly-mirror-bot@users.noreply.github.com"
+          git add changelog.md
+          git commit -m "Rewrite changelog for Renovate" || echo "No changes"
+
+      - name: Push changes
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git push origin main
