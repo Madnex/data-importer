@@ -134,7 +134,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - [Issue 9980](https://github.com/firefly-iii/firefly-iii/issues/9980) (Firefly FIDI incorrect exit code when errors received) reported by @miguelangel-nubla
 - [Issue 10099](https://github.com/firefly-iii/firefly-iii/issues/10099) (Data Importer loses Secrets from Variables after clicking "Start over") reported by @rrosenbauer
 
-## 1.6.1 - 2025-02-19
+## version-1.6.1 - 2025-02-19
 
 > ⚠️⚠️ This release required **PHP 8.4.0** and will not work on earlier releases of PHP ⚠️⚠️
 
@@ -144,7 +144,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - [Issue 9840](https://github.com/firefly-iii/firefly-iii/issues/9840) (Data Importer doesn't detect duplicates when using "notes" for the unique column) reported by @muhammad-saleh
 
-## 1.6.0 - 2025-01-31
+## version-1.6.0 - 2025-01-31
 
 > ⚠️⚠️ This release required **PHP 8.4.0** and will not work on earlier releases of PHP ⚠️⚠️
 
@@ -190,7 +190,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - [Issue 9347](https://github.com/firefly-iii/firefly-iii/issues/9347) (Importing transaction with huge external id throws error) reported by @diogotcorreia
 - [Issue 9345](https://github.com/firefly-iii/firefly-iii/issues/9345) (data importer - error lines don't match to actual lines in csv) reported by @rel-thanu
 
-## 1.5.6 - 2024-09-15
+## version-1.5.6 - 2024-09-15
 
 ### Changed
 - Improved GoCardless rate limiting handling
@@ -199,7 +199,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - GoCardless rate limit could report negative time.
 - Documentation links
 
-## 1.5.5 - 2024-09-05
+## version-1.5.5 - 2024-09-05
 
 ### Changed
 - Better GoCardless rate limiting reporting
@@ -207,12 +207,12 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 ### Fixed
 - [Issue 9194](https://github.com/firefly-iii/firefly-iii/issues/9194) (data importer via gocardless EU - details of the account is not imported anymore after last two versions) reported by @fate8383
 
-## 1.5.4 - 2024-08-22
+## version-1.5.4 - 2024-08-22
 
 ### Added
 - [Issue 9139](https://github.com/firefly-iii/firefly-iii/issues/9139) (Implement rate limiting for GoCardless) reported by @JC5
 
-## 1.5.3 - 2024-07-28
+## version-1.5.3 - 2024-07-28
 
 ### Added
 - Support for another bank's debit indicator, by @0xjams 
@@ -222,7 +222,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - [Discussion 9067](https://github.com/orgs/firefly-iii/discussions/9067) (Unable to automate: Data-importer doesn't remember which accounts spectre accounts map to.) started by @demiGod095
 - [Issue 9044](https://github.com/firefly-iii/firefly-iii/issues/9044) (Minor issue in AutoImport.php - does not catch a 'bad path' error) reported by @Terry-JF
 
-## 1.5.2 - 2024-04-24
+## version-1.5.2 - 2024-04-24
 
 ### Added
 - [Issue 8769](https://github.com/firefly-iii/firefly-iii/issues/8769) (Perform balance check after the import) reported by @dawid-czarnecki
@@ -231,13 +231,13 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - [Issue 8799](https://github.com/firefly-iii/firefly-iii/issues/8799) (Undefined index in CAMT role selection) reported by @beune
 - [Issue 8800](https://github.com/firefly-iii/firefly-iii/issues/8800) (Call to undefined function 'hasResponse') reported by @VanQz
 
-## 1.5.1 - 2024-04-18
+## version-1.5.1 - 2024-04-18
 
 ### Fixed
 - [Issue 8798](https://github.com/firefly-iii/firefly-iii/issues/8798) (Undefined variable $version) reported by @JC5
 - Fix an issue with default currency selection.
 
-## 1.5.0 - 2024-04-18
+## version-1.5.0 - 2024-04-18
 
 ### Added
 - The data importer has a release flow just like Firefly III, dropping generated JS files and other dependencies from the repository.
@@ -254,7 +254,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - [Issue 8771](https://github.com/firefly-iii/firefly-iii/issues/8771) (Typo on Data Importer log) reported by @jemtz-deleon
 - [PR 575](https://github.com/firefly-iii/data-importer/pull/575) (Update `.env.example`, `ASSET_URL` moved, example given) by @stevewasiura
 
-## 1.4.5 - 2024-03-21
+## version-1.4.5 - 2024-03-21
 
 ### Added
 - Added the option to add a "fallback" configuration file for directory imports, by @Call-Me-G-Now. See the [documentation](https://docs.firefly-iii.org/how-to/data-importer/advanced/post/#importing-a-local-directory) for more info.
@@ -278,7 +278,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - [PR 529](https://github.com/firefly-iii/data-importer/pull/529) (Fixed a small issue with a label targeting the wrong input) by @moritzgloeckl
 - [PR 531](https://github.com/firefly-iii/data-importer/pull/531) (Update Nordigen base url) by @JcMinarro
 
-## 1.4.3 - 2024-02-05
+## version-1.4.3 - 2024-02-05
 
 ### Changed
 - The data importer can connect to nightly builds of Firefly III, which self-report as version `develop/YYYY-MM-DD`.
@@ -312,7 +312,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - Fix log levels in papertrail configuration
 - The UI will email reports again
 
-## 1.4.0 - 2023-12-18
+## version-1.4.0 - 2023-12-18
 
 > ⚠️⚠️ This release required **PHP 8.3.0** and will not work on earlier releases of PHP ⚠️⚠️
 
@@ -339,12 +339,12 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - Expand notifications so logging can be more easily parsed.
 - Nordigen / GoCardless now saves the booked / pending tags as well.
 
-## 1.3.12 - 2023-11-23
+## version-1.3.12 - 2023-11-23
 
 ### Added
 - Support for Mint imports. Use [this configuration file](https://github.com/firefly-iii/import-configurations/blob/main/other-software/mint.json).
 
-## 1.3.11 - 2023-11-23
+## version-1.3.11 - 2023-11-23
 
 ### Changed
 - Add some more explanation text to the date input
@@ -352,7 +352,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 ### Fixed
 - [Issue 8184](https://github.com/firefly-iii/firefly-iii/issues/8184) I broke the importer 
 
-## 1.3.10 - 2023-11-21
+## version-1.3.10 - 2023-11-21
 
 >  ⚠️ Some changes in this release may unexpectedly lead to duplicate transactions. This is caused by changes in the data handling routines. This is unfortunate, but a result of new insights, changed APIs and other minor fixes. My apologies for any inconvenience. I try to avoid these kinds of changes, but it can't always be helped.
 
@@ -367,7 +367,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - [Issue 8158](https://github.com/firefly-iii/firefly-iii/issues/8158) Several nullpointers
 
 
-## 1.3.9 - 2023-11-04
+## version-1.3.9 - 2023-11-04
 
 >  ⚠️ Some changes in this release may unexpectedly lead to duplicate transactions. This is caused by changes in the data handling routines. This is unfortunate, but a result of new insights, changed APIs and other minor fixes. My apologies for any inconvenience. I try to avoid these kinds of changes, but it can't always be helped.
 
@@ -384,17 +384,17 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - [Issue 8052](https://github.com/firefly-iii/firefly-iii/issues/8052) Credit card transactions after a certain date are not imported while all other transactions are
 - [Issue 8207](https://github.com/firefly-iii/firefly-iii/issues/8207) Data Importer ignoring relevant Nordigen error.
 
-## 1.3.8 - 2023-09-02
+## version-1.3.8 - 2023-09-02
 
 ### Fixed
 - [Issue 7918](https://github.com/firefly-iii/firefly-iii/issues/7918) Make sure XML file are recognized by the POST importer
 
-## 1.3.7 - 2023-09-02
+## version-1.3.7 - 2023-09-02
 
 ### Fixed
 - The POST import command and the CLI import routine will also stop working if the connected Firefly III is too old.
 
-## 1.3.6 - 2023-09-02
+## version-1.3.6 - 2023-09-02
 
 >  ⚠️ This release may create duplicate transactions. Don't import large batches!
 
@@ -405,13 +405,13 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - CAMT fix to verify the transaction type.
 - Better flow for the onboarding of new users. Updated the documentation to match.
 
-## 1.3.5 - 2023-08-23
+## version-1.3.5 - 2023-08-23
 
 ### Fixed
 - Error in CSV import would break imports for many users, thanks for reporting!
 - Many null pointers removed from CAMT.053 import.
 
-## 1.3.4 - 2023-08-21
+## version-1.3.4 - 2023-08-21
 
 >  ⚠️ This release may create duplicate transactions. Don't import large batches!
 
@@ -425,12 +425,12 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - Fixed several camt.053 unstructured data import issues.
 - [Issue 7816](https://github.com/firefly-iii/firefly-iii/issues/7816) Importer would break when there was no currency information in a camt file.
 
-## 1.3.3 - 2021-07-17
+## version-1.3.3 - 2021-07-17
 
 ### Fixed
 - Formatting issue in debug log message broke the CAMT import
 
-## 1.3.2 - 2023-07-16
+## version-1.3.2 - 2023-07-16
 
 ### Added
 - Better error handling for CAMT files.
@@ -442,7 +442,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - [Issue 7729](https://github.com/firefly-iii/firefly-iii/issues/7729) Make sure account type detection can't be overruled by later attempts.
 - [Issue 7747](https://github.com/firefly-iii/firefly-iii/issues/7747) Nullpointer in CAMT import
 
-## 1.3.1 - 2021-06-27=8
+## version-1.3.1 - 2021-06-27=8
 
 > ⚠️ This release may create duplicate transactions. Don't import large batches!
 
@@ -482,7 +482,7 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 ### Fixed
 - [Issue 7225](https://github.com/firefly-iii/firefly-iii/issues/7225) Fix email error when no vanity url is set
 
-## 1.2.1 - 2023-03-13
+## version-1.2.1 - 2023-03-13
 
 ### Fixed
 - [Issue 7214](https://github.com/firefly-iii/firefly-iii/issues/7214) Previous issue with account currency matching needed a Data Importer fix as well.
@@ -490,7 +490,7 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 ### Changed
 - This release will only work with Firefly III v6.0.4
 
-## 1.2.0 - 2023-03-13
+## version-1.2.0 - 2023-03-13
 
 ### Fixed
 - [Issue 7207](https://github.com/firefly-iii/firefly-iii/issues/7207) Missing key validation
@@ -498,7 +498,7 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 ### Changed
 - This release will only work with Firefly III v6.0.3
 
-## 1.1.0 - 2023-03-12
+## version-1.1.0 - 2023-03-12
 
 ### Added
 - Warnings when you use bad configuration values.
@@ -507,18 +507,18 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 ### Changed
 - Improve logging when reporting on possible duplicates.
 
-## 1.0.2 - 2022-01-27
+## version-1.0.2 - 2022-01-27
 
 ### Fixed
 - Missing array key breaks Nordigen and Spectre imports.
 
-## 1.0.1 - 2022-01-26
+## version-1.0.1 - 2022-01-26
 
 ### Fixed
 - Fixed missing options when importing CSV file.
 - Remove `APP_KEY` generation since the data importer doesn't use one.
 
-## 1.0.0 - 2022-01-23
+## version-1.0.0 - 2022-01-23
 
 - ⚠️ This release requires PHP 8.2.
 - ⚠️ This release may create duplicate transactions. Don't import large batches!
@@ -537,7 +537,7 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 - Fix bad method call
 - Make sure CSV import values are trimmed (prevents account names like `PAYPAL    `)
 
-## 0.9.17 - 2021-10-24
+## version-0.9.17 - 2021-10-24
 
 ⚠️ This release WILL create duplicate transactions. Don't import large batches!
 
@@ -548,7 +548,7 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 - Fix [issue 6548](https://github.com/firefly-iii/firefly-iii/issues/6548)
 - Fix [issue 6525](https://github.com/firefly-iii/firefly-iii/issues/6525)
 
-## 0.9.16 - 2022-09-12
+## version-0.9.16 - 2022-09-12
 
 ### Added
 - Ability to recognize 'Charge' as a debit transaction.
@@ -564,12 +564,12 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 ### Security
 - Update packages
 
-## 0.9.15 - 2022-07-25
+## version-0.9.15 - 2022-07-25
 
 ### Fixed
 - [Issue 6259](https://github.com/firefly-iii/firefly-iii/issues/6259) Fixed an issue where deposits would not be given a source account.
 
-## 0.9.14 - 2022-07-21
+## version-0.9.14 - 2022-07-21
 
 ### Added
 - Fallback to additional information field if description is empty, thanks @martinslota
@@ -579,17 +579,17 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 - [Issue 6244](https://github.com/firefly-iii/firefly-iii/issues/6244) Rename field from 'uri' to 'url'.
 - Fix missing field data check for spectre imports.
 
-## 0.9.13 - 2022-07-19
+## version-0.9.13 - 2022-07-19
 
 ### Fixed
 - Fixed an issue where the importer would break when importing mapped transactions.
 
-## 0.9.12 - 2022-07-16
+## version-0.9.12 - 2022-07-16
 
 ### Fixed
 - Make sure packages match PHP 8.0
 
-## 0.9.11 - 2022-07-16
+## version-0.9.11 - 2022-07-16
 
 ### Fixed
 - Issue where config files with empty strings would break the date selection.
@@ -597,12 +597,12 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 - [Issue 6233](https://github.com/firefly-iii/firefly-iii/issues/6233) Fix issue where mapping an expense account to a revenue spot would break the import.
 - Fix issue where the importer would not detect empty descriptions. Thanks @BerghsJelmer
 
-## 0.9.10 - 2022-05-03
+## version-0.9.10 - 2022-05-03
 
 ### Changed
 - Require the most recent version of Firefly III
 
-## 0.9.9 - 2022-05-03
+## version-0.9.9 - 2022-05-03
 
 ### Changed
 - Made the texts more generic to accommodate future changes
@@ -612,44 +612,44 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 ### Fixed
 - [Issue 5980](https://github.com/firefly-iii/firefly-iii/issues/5980) Fix date range.
 
-## 0.9.8 - 2022-04-13
+## version-0.9.8 - 2022-04-13
 
 ### Fixed
 - Fixes an issue with an underlying package.
 
-## 0.9.7 - 2022-04-11
+## version-0.9.7 - 2022-04-11
 
 ### Fixed
 - Fixes an issue with an underlying package.
 
-## 0.9.6 - 2022-04-11
+## version-0.9.6 - 2022-04-11
 
 ### Fixed
 - Fixes an issue with an underlying package.
 
-## 0.9.5 - 2022-04-10
+## version-0.9.5 - 2022-04-10
 
 ### Fixed
 - Fixes an issue with an underlying package.
 
-## 0.9.4 - 2022-04-10
+## version-0.9.4 - 2022-04-10
 
 ### Fixed
 - Fixes another issue with detecting duplicate transactions.
 
-## 0.9.3 - 2022-04-05
+## version-0.9.3 - 2022-04-05
 
 ### Fixed
 
 - A small change should make it easier for the data importer to detect failed transaction creation attempts.
 - [Issue 5964](https://github.com/firefly-iii/firefly-iii/issues/5964) Updated libraries to fix issue.
 
-## 0.9.2 - 2022-04-02
+## version-0.9.2 - 2022-04-02
 
 ### Fixed
 - Removed some overly chatty status messages.
 
-## 0.9.1 - 2022-04-02
+## version-0.9.1 - 2022-04-02
 
 ### Added
 - There is an option to set the maximum days to import from Nordigen, thanks @krehl!
@@ -658,7 +658,7 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 ### Fixed
 - [Issue 5871](https://github.com/firefly-iii/firefly-iii/issues/5871) Importer would ignore time-outs
 
-## 0.9.0 - 2022-02-22
+## version-0.9.0 - 2022-02-22
 
 - ⚠️ This release WILL create duplicate transactions. Don't import large batches!
 
@@ -675,7 +675,7 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 - [Issue 5731](https://github.com/firefly-iii/firefly-iii/issues/5731) Could not import transfers from Spectre
 - [Issue 5735](https://github.com/firefly-iii/firefly-iii/issues/5735) Better support for old import configuration files
 
-## 0.8.0 - 2022-02-07
+## version-0.8.0 - 2022-02-07
 
 - ⚠️ Using Nordigen? This release WILL create duplicate transactions. Don't import large batches.
 
@@ -693,7 +693,7 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 - Better check on messages to report
 - Will not email if not configured to
 
-## 0.7.0 - 2022-01-22
+## version-0.7.0 - 2022-01-22
 
 - ⚠️ Using Nordigen? This release WILL create duplicate transactions. Don't import large batches.
 
@@ -709,38 +709,38 @@ A special thanks to the excellent folks over at @nordigen for some quick debuggi
 - A missing method broke navigation.
 - Sometimes session details would get lost in translation.
 
-## 0.6.5 - 2022-01-15
+## version-0.6.5 - 2022-01-15
 
 ### Fixed
 
 - Catch error in `balanceAfterTransaction` field.
 
-## 0.6.4 - 2022-01-15
+## version-0.6.4 - 2022-01-15
 
 ### Fixed
 
 - `ownerAddressUnstructured` could unexpectedly be unset.
 
-## 0.6.3 - 2022-01-12
+## version-0.6.3 - 2022-01-12
 
 ### Fixed
 
 - Nordigen reports the `ownerAddressUnstructured` both as string and array, thanks @dawid-czarnecki
 
-## 0.6.2 - 2022-01-12
+## version-0.6.2 - 2022-01-12
 
 ### Fixed
 
 - [Issue 5507](https://github.com/firefly-iii/firefly-iii/issues/5507) `ownerAddressUnstructured` field is of the wrong data type.
 - Version 0.6.1 also reports as 0.6.0.
 
-## 0.6.1 - 2022-01-08
+## version-0.6.1 - 2022-01-08
 
 ### Fixed
 
 - Missing continue statement in transaction processor
 
-## 0.6.0 - 2022-01-08
+## version-0.6.0 - 2022-01-08
 
 - ⚠️ Duplicate detection could be broken, due to changes in the way transactions are handled. Be careful importing large batches.
 - 💡 Some people have reported running into loops when trying to start importing CSV files. Please [open an issue](https://github.com/firefly-iii/firefly-iii/issues) if this happens to you.
@@ -761,7 +761,7 @@ A special thanks to the excellent folks over at @nordigen for some quick debuggi
 - The autoupload endpoint would require CSV files, even when using Nordigen or Spectre.
 - [Issue 5502](https://github.com/firefly-iii/firefly-iii/issues/5502) Sloppy copy/paste bug leads to confusion between the base URL and the vanity URL.
 
-## 0.5.0 - 2022-01-01
+## version-0.5.0 - 2022-01-01
 
 - ⚠️ Duplicate detection could be broken, due to changes in the way transactions are handled. Be careful importing large batches.
 - 💡 Some people have reported running into loops when trying to start importing CSV files. Please [open an issue](https://github.com/firefly-iii/firefly-iii/issues) if this happens to you.
@@ -782,7 +782,7 @@ A special thanks to the excellent folks over at @nordigen for some quick debuggi
 - [Issue 5459](https://github.com/firefly-iii/firefly-iii/issues/5459) Fix issue when skipping configuration page.
 - Filter spaces from IBANs
 
-## 0.4.1 - 2021-12-23
+## version-0.4.1 - 2021-12-23
 
 - ⚠️ Duplicate detection could be broken, due to changes in the way transactions are handled. Be careful importing large batches.
 - 💡 Some people have reported running into loops when trying to start importing CSV files. Please [open an issue](https://github.com/firefly-iii/firefly-iii/issues) if this happens to you.
@@ -793,7 +793,7 @@ A special thanks to the excellent folks over at @nordigen for some quick debuggi
 ### Fixed
 - [Issue 5416](https://github.com/firefly-iii/firefly-iii/issues/5416) Mismatch in function name breaks Nordigen.
 
-## 0.4.0 - 2021-12-22
+## version-0.4.0 - 2021-12-22
 
 ### Known issues
 
@@ -812,7 +812,7 @@ A special thanks to the excellent folks over at @nordigen for some quick debuggi
 - [Issue 23](https://github.com/firefly-iii/data-importer/pull/23), fixed date range settings, thanks @p-rintz
 - [Issue 5407](https://github.com/firefly-iii/firefly-iii/issues/5407) Fix issue with empty accountlists.
 
-## 0.3.0 - 2021-12-11
+## version-0.3.0 - 2021-12-11
 
 ### Added
 - [Issue 5342](https://github.com/firefly-iii/firefly-iii/issues/5342) Can import "external URL" field.
@@ -830,7 +830,7 @@ A special thanks to the excellent folks over at @nordigen for some quick debuggi
 - Fix issue with transfers being imported as deposits.
 - New debit indicator thanks to @reeperbahnause
 
-## 0.2.0 - 2021-12-04
+## version-0.2.0 - 2021-12-04
 
 ### Added
 - There is a `/debug` page if you need it.
@@ -850,7 +850,7 @@ A special thanks to the excellent folks over at @nordigen for some quick debuggi
 - [Issue 5344](https://github.com/firefly-iii/firefly-iii/issues/5344) Protocol mismatch
 - [Issue 5345](https://github.com/firefly-iii/firefly-iii/issues/5345) Some transactions are said to have the same source and destination
 
-## 0.1.0 - 2021-11-27
+## version-0.1.0 - 2021-11-27
 
 First release of the data importer.
 
