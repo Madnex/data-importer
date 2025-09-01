@@ -28,7 +28,7 @@ jobs:
       - name: Rewrite changelog.md
         run: |
           # Replace "## X.Y.Z" → "## version-X.Y.Z"
-          sed -i -E 's/^## ([0-9]+\.[0-9]+\.[0-9]+)/## version-\1/g' changelog.md
+          sed -i -E 's/^##\s+v?([0-9]+\.[0-9]+\.[0-9]+)/## version-\1/g' changelog.md
           git config user.name "Firefly Mirror Bot"
           git config user.email "firefly-mirror-bot@users.noreply.github.com"
           git add changelog.md
