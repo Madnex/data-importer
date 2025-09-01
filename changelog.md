@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## v1.7.10 - 2025-08-23
+## version-1.7.10 - 2025-08-23
 
 ### Deprecated
 - Support for Firefly III < v6.3.2
@@ -16,7 +16,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Loop back to role selection has the wrong label, reported by @Kage1
 - Pending transactions were always imported, reported by @Kage1
 
-## v1.7.9 - 2025-07-31
+## version-1.7.9 - 2025-07-31
 
 ### Added
 - [PR 917](https://github.com/firefly-iii/data-importer/pull/917) (Add OUT as debit indicator) by @icewind1991
@@ -24,7 +24,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - [Issue 10643](https://github.com/firefly-iii/firefly-iii/issues/10643) (Importer failing on an import of ING) reported by @MTijn
 
-## v1.7.8 - 2025-07-20
+## version-1.7.8 - 2025-07-20
 
 >  ⚠️ Some changes in this release may unexpectedly lead to duplicate transactions. This is caused by changes in the data handling routines. This is unfortunate, but a result of new insights, changed APIs and other minor fixes. My apologies for any inconvenience. I try to avoid these kinds of changes, but it can't always be helped.
 
@@ -35,7 +35,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - [PR 901](https://github.com/firefly-iii/data-importer/pull/901) by @TomVarga for issue 10609
 - [PR 905](https://github.com/firefly-iii/data-importer/pull/905) by @DrEthan77 (This PR fixes issue 10599)
 
-## v1.7.7 - 2025-07-16
+## version-1.7.7 - 2025-07-16
 
 ### Changed
 - Various SimpleFIN optimizations, drops the "CORS URL" from the required fields.
@@ -43,7 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - [Discussion 10599](https://github.com/orgs/firefly-iii/discussions/10599) (Issue with simpleFIN importing) started by @DrEthan77
 
-## v1.7.6 - 2025-07-15
+## version-1.7.6 - 2025-07-15
 
 >  ⚠️ Some changes in this release may unexpectedly lead to duplicate transactions. This is caused by changes in the data handling routines. This is unfortunate, but a result of new insights, changed APIs and other minor fixes. My apologies for any inconvenience. I try to avoid these kinds of changes, but it can't always be helped.
 
@@ -60,30 +60,30 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - [Issue 10580](https://github.com/firefly-iii/firefly-iii/issues/10580) ([Importer] GoCardless account matching UI is broken in dark mode) reported by @avee87
 - [PR 882](https://github.com/firefly-iii/data-importer/pull/882) (This PR fixes issue 8296) by @TomVarga
 
-## v1.7.5 - 2025-07-06
+## version-1.7.5 - 2025-07-06
 
 ### Fixed
 - Improved duplicate detection for SimpleFIN imports.
 
-## v1.7.4 - 2025-07-06
+## version-1.7.4 - 2025-07-06
 
 ### Fixed
 - [Issue 10550](https://github.com/firefly-iii/firefly-iii/issues/10550) ([Importer] Issues with SimpleFIN Import) reported by @PacketThrowr
 - [Issue 10556](https://github.com/firefly-iii/firefly-iii/issues/10556) (Save the connection string for subsequent SimpleFIN imports) reported by @Gsyltc
 - [Issue 10541](https://github.com/firefly-iii/firefly-iii/issues/10541) (Type error in str_replace function, breaks GoCardless import during configuration) reported by @alexmaisel
 
-## v1.7.3 - 2025-07-04
+## version-1.7.3 - 2025-07-04
 
 ### Fixed
 - Restore duplicate detection options
 - SimpleFIN import will not always try to create accounts
 
-## v1.7.2 - 2025-07-03
+## version-1.7.2 - 2025-07-03
 
 ### Fixed
 - [Issue 10541](https://github.com/firefly-iii/firefly-iii/issues/10541) (Type error in str_replace function, breaks GoCardless import during configuration) reported by @alexmaisel
 
-## v1.7.1 - 2025-07-02
+## version-1.7.1 - 2025-07-02
 
 >  ⚠️ Some changes in this release may unexpectedly lead to duplicate transactions. This is caused by changes in the data handling routines. This is unfortunate, but a result of new insights, changed APIs and other minor fixes. My apologies for any inconvenience. I try to avoid these kinds of changes, but it can't always be helped.
 
@@ -95,7 +95,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - [Issue 10508](https://github.com/firefly-iii/firefly-iii/issues/10508) (Firefly Version 1.7.0 uses SimpleFIN for GoCardless and crashes when importing) reported by @L3tum
 - Improved parsing of dates.
 
-## v1.7.0 - 2025-06-26
+## version-1.7.0 - 2025-06-26
 
 ### Added
 - Support for SimpleFIN, developed by user 'skell'
@@ -104,7 +104,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Better check on Authorization header for users who use Basic Auth.
 - [Issue 5396](https://github.com/firefly-iii/firefly-iii/issues/5396) (Data importer: SimpleFIN) reported by @marcusds, with special thanks again to skell, and all the beta testers who helped out!
 
-## v1.6.3 - 2025-06-08
+## version-1.6.3 - 2025-06-08
 
 >  ⚠️ Some changes in this release may unexpectedly lead to duplicate transactions. This is caused by changes in the data handling routines. This is unfortunate, but a result of new insights, changed APIs and other minor fixes. My apologies for any inconvenience. I try to avoid these kinds of changes, but it can't always be helped.
 
@@ -124,7 +124,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - [PR 803](https://github.com/firefly-iii/data-importer/pull/803) Ignore exception opening counter-main.txt by @grgar
 - [PR 814](https://github.com/firefly-iii/data-importer/pull/814) Consider account number uniquely identifying by @oddstr13
 
-## v1.6.2 - 2025-04-21
+## version-1.6.2 - 2025-04-21
 
 ### Added
 - [PR 782](https://github.com/firefly-iii/data-importer/pull/782) Auto import: Honor JSON_CONFIGURATION_DIR by @yparitcher
@@ -172,7 +172,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 ### Removed
 - Support for < PHP 8.4
 
-## v1.5.7 - 2024-11-10
+## version-1.5.7 - 2024-11-10
 
 ### Added
 - Add debug information for rate limits from GoCardless
@@ -270,7 +270,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - [Issue 8607](https://github.com/firefly-iii/firefly-iii/issues/8607) (Data Importer Vanity URL with Docker not being shown) reported by @Jademalo
 - Typo in debug logs by @Call-Me-G-Now
 
-## v1.4.4 - 2024-02-18
+## version-1.4.4 - 2024-02-18
 
 ### Fixed
 - [Issue 8534](https://github.com/firefly-iii/firefly-iii/issues/8534) (Data Importer ignoring relevant Nordigen error.) reported by @miguelangel-nubla
@@ -286,7 +286,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 ### Fixed
 - [Discussion 8482](https://github.com/orgs/firefly-iii/discussions/8482) (Why is the importer turning 25.00000 into 2,500,000?) started by @jerrac
 
-## v1.4.2 - 2024-01-22
+## version-1.4.2 - 2024-01-22
 
 ### Added
 - [Issue 8391](https://github.com/firefly-iii/firefly-iii/issues/8391) (Add OCI Labels to Docker Images) reported by @mytlogos
@@ -298,7 +298,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - [Issue 8408](https://github.com/firefly-iii/firefly-iii/issues/8408) (Importing camt.053 file fails during conversion step) reported by @ltouroumov
 - [Issue 8414](https://github.com/firefly-iii/firefly-iii/issues/8414) (Getting `Unexpected data found.` trying to import via GoCardless/Nordigen) reported by @dabeeeenster
 
-## v1.4.1 - 2024-01-15
+## version-1.4.1 - 2024-01-15
 
 ### Added
 - Nordigen supports "bookingDateTime"
@@ -453,7 +453,7 @@ Due to changes in the Docker image, the commands that use `WEB_SERVER=false` to 
 - Many small and large fixes in the new CAMT.053 import routine. Thanks again, @beatbesmer and bug testers!
 - [Issue 7643](https://github.com/firefly-iii/firefly-iii/issues/7643) Bad redirect when trying to import using a config file. 
 
-## v1.3.0 - 2023-06-05
+## version-1.3.0 - 2023-06-05
 
 - ⚠️ This release may create duplicate transactions. Don't import large batches!
 
@@ -472,7 +472,7 @@ crashes. We welcome your feedback in the form of [bug reports](https://github.co
 - [Issue 7512](https://github.com/firefly-iii/firefly-iii/issues/7512) Broken links in app and documentation
 - [Issue 7264](https://github.com/firefly-iii/firefly-iii/issues/7264) Data Importer crashes when mail server auth fails
 
-## v1.2.2 - 2023-03-19
+## version-1.2.2 - 2023-03-19
 
 - ⚠️ This release may create duplicate transactions. Don't import large batches!
 
@@ -854,7 +854,7 @@ A special thanks to the excellent folks over at @nordigen for some quick debuggi
 
 First release of the data importer.
 
-## v0.0.0 - 2021-xx-xx
+## version-0.0.0 - 2021-xx-xx
 
 ### Added
 - Initial release.
